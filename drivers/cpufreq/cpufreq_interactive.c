@@ -1081,8 +1081,13 @@ static ssize_t show_target_loads(
 		ret += sprintf(buf + ret, "%u%s", target_loads[i],
 			       i & 0x1 ? ":" : " ");
 #endif
+<<<<<<< HEAD
     ret = ret - 1;
 	ret += sprintf(buf + ret, "\n");
+=======
+
+	ret = target_loads[i];
+>>>>>>> a1ac299... Fix Compiling Issues
 	spin_unlock_irqrestore(&target_loads_lock, flags);
 	return ret;
 }
@@ -1151,8 +1156,12 @@ static ssize_t show_above_hispeed_delay(
 			       i & 0x1 ? ":" : " ");
 #endif
 
+<<<<<<< HEAD
     ret = ret - 1;
 	ret += sprintf(buf + ret, "\n");
+=======
+	ret = target_loads[i];
+>>>>>>> a1ac299... Fix Compiling Issues
 	spin_unlock_irqrestore(&above_hispeed_delay_lock, flags);
 	return ret;
 }
