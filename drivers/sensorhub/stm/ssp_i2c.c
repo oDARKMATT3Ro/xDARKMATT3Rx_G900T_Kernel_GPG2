@@ -13,7 +13,6 @@
  *
  */
 #include "ssp.h"
-#include <linux/kt_wake_funcs.h>
 
 #define LIMIT_DELAY_CNT		200
 #define RECEIVEBUFFERSIZE	12
